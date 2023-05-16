@@ -2013,6 +2013,9 @@ input::-webkit-inner-spin-button {
 }
 
 .title-wrap li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   background: #E7E7E7;
   text-align: center;
@@ -2028,7 +2031,7 @@ input::-webkit-inner-spin-button {
   font-size: 12px;
   line-height: 1.4;
   font-weight: 400;
-  color: #818181;
+  color: #605050;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   margin: 0 0 5px;
@@ -2374,6 +2377,7 @@ input::-webkit-inner-spin-button {
 }
 
 .img-on-video {
+  position: relative;
   margin-bottom: 62px;
 }
 
@@ -2470,12 +2474,33 @@ input::-webkit-inner-spin-button {
 }
 
 .popup .modal {
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
-  position: relative;
+  position: absolute;
   width: 100%;
   display: block;
   overflow: visible;
+  top: 20%;
+}
+
+.popup iframe {
+  width: 100%;
+}
+
+.bg-light {
+  background-color: #FFFFFF;
+}
+
+.prize {
+  position: relative;
+}
+
+.prize::after {
+  content: url(../images/Vector\ \(7\).png);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 58%;
 }
 
 
@@ -2897,6 +2922,10 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 991px) {
 
+  .about-details-right-col {
+    padding: 0;
+  }
+
   .bread-crumb h1 {
     font-size: 45px;
   }
@@ -2976,7 +3005,6 @@ input::-webkit-inner-spin-button {
   .tabs-block {
     flex-direction: column;
   }
-
 
   .tabs-left-col {
     width: 100%;
@@ -3102,8 +3130,12 @@ input::-webkit-inner-spin-button {
 
   .title-wrap {
     margin-top: 32px;
-    column-gap: 28px;
+    column-gap: 25px;
     margin-bottom: 16px;
+  }
+
+  .title-wrap li {
+    line-height: 25px;
   }
 
   .device-text-area p {
@@ -3197,6 +3229,11 @@ input::-webkit-inner-spin-button {
   .bottom-text h3 {
     font-size: 24px;
   }
+
+  .device-img-details {
+    height: 100%;
+  }
+ 
 
 }
 
@@ -3381,6 +3418,10 @@ input::-webkit-inner-spin-button {
     font-size: 22px;
   }
 
+  .title-wrap {
+    column-gap: 20px;
+  }
+
 
 
 }
@@ -3494,6 +3535,10 @@ input::-webkit-inner-spin-button {
   .clients-head h2 {
     font-size: 30px;
     line-height: 20px;
+  }
+
+  .title-wrap {
+    column-gap: 15px;
   }
 
 }
