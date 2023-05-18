@@ -86,9 +86,8 @@ $(function() {
 
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".clients_slider", {
 	spaceBetween: 30,
-	loop:true,
 	autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -98,6 +97,10 @@ var swiper = new Swiper(".mySwiper", {
 	  clickable: true,
 	},
 	breakpoints: {
+		425: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		  },
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
@@ -126,4 +129,9 @@ $(document).ready(function () {
     })
     
 })
+
+// function showAlert() {
+    // alert ("Hello world!");
+//   }
+
 
