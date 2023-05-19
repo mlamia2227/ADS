@@ -1111,9 +1111,6 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.service-item:nth-child(3) {
-  margin: 0 20px;
-}
 
 .service-item img {
   width: 100%;
@@ -1429,7 +1426,7 @@ button:focus {
   transition: all 0.3s ease-in-out;
 
 }
-
+/* 
 .img-clients::before {
   content: "";
   width: 4px;
@@ -1442,6 +1439,8 @@ button:focus {
   visibility: hidden;
   opacity: 0;
 }
+ */
+
 
 .img-clients:hover img {
   opacity: 1;
@@ -2000,12 +1999,11 @@ input::-webkit-inner-spin-button {
 .device-img-details {
   width: 100%;
   position: relative;
-  aspect-ratio: 639/526;
 }
 
 .device-img-details img {
   width: 100%;
-  aspect-ratio: 727/595;
+  aspect-ratio: 639/526;
 }
 
 .device-details-right-col {
@@ -2148,10 +2146,6 @@ input::-webkit-inner-spin-button {
   color: #595959;
   margin-bottom: 35px;
   line-height: 32px;
-}
-
-.device-details {
-  height: 600px;
 }
 
 .about-me-wrapper {
@@ -2674,8 +2668,6 @@ input::-webkit-inner-spin-button {
   width: 100%;
   aspect-ratio: 482/460 !important; 
 }
-
-
 
 
 
@@ -3246,7 +3238,8 @@ input::-webkit-inner-spin-button {
   }
 
   .service-item:nth-child(3) {
-    margin-right: 0;
+    margin: 15px 0;
+
   }
 
   .service-item .service-link a {
