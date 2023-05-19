@@ -1670,7 +1670,7 @@ footer {
 }
 
 .device-filter-left-col {
-  width: 30%;
+  width: 28%;
 }
 
 .checkbox-list {
@@ -1832,10 +1832,10 @@ input::-webkit-inner-spin-button {
 }
 
 .device-img-info {
-  width: 70%;
+  width: 72%;
   padding-left: 104px;
   display: flex;
-  column-gap: 52px;
+  column-gap: 35px;
   margin-top: 53px;
   margin-bottom: 53px;
   flex-wrap: wrap;
@@ -1843,7 +1843,7 @@ input::-webkit-inner-spin-button {
 }
 
 .device-img-item {
-  width: 49%;
+  width: 48%;
   position: relative;
   transition: 0.3s ease-in-out;
 
