@@ -131,6 +131,11 @@ a:hover {
   line-height: 32px;
 }
 
+
+.slider-content h2 {
+  font-size: 63px;
+}
+
 @media (max-width: 991px) {
   .site-navbar {
     padding-top: 3rem;
@@ -2864,10 +2869,6 @@ input::-webkit-inner-spin-button {
 
   .device-img-info {
     width: 73%;
-  }
-
-  .slider-content h2 {
-    font-size: 63px;
   }
 
   .service-item .service-link a {
